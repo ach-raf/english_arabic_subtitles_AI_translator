@@ -29,7 +29,7 @@ class Translator(ABC):
 
     def srt_translation(self, subtitle_path, subtitle_output_path):
         subs = utils.extract_subtitles(subtitle_path)
-        translated_subs = self.subtitles_processing_new(subs)
+        translated_subs = self.subtitles_processing(subs)
         utils.write_srt_file(translated_subs, subtitle_output_path)
 
     # Add function to inspect model outputs

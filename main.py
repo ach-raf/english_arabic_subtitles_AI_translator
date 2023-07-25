@@ -11,7 +11,7 @@ if __name__ == "__main__":
     # translator = M2M100Translator.M2M100Translator(model_name)
     translator = OpusTranslator.OpusTranslator(model_name)
 
-    textt = "hello world"
+    textt = """hello world"""
 
     # translator.translate(textt)
     # Example usage:
@@ -22,4 +22,4 @@ if __name__ == "__main__":
 
     # subtitle_path = "Revolver.2005.Bluray-1080p.srt"
     # subtitle_output_path = f"{subtitle_path[:-4]}_2023_big.srt"
-    # translator.new_srt_translation(subtitle_path, subtitle_output_path)
+    # translator.srt_translation(subtitle_path, subtitle_output_path)
